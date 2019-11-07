@@ -1,0 +1,18 @@
+.detail{
+    border: #483d8b solid 3px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center
+}
+.detail h2 {
+    font-weight: 800;
+}
+.detail .input{
+    margin-top: 1rem;
+}
+
+.detail .id{
+    border: black 1px solid;
+    margin: 0 auto;
+    width: 50%
+}

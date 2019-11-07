@@ -1,10 +1,17 @@
 <h2>My Waifus</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes"
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
-</ul>
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<div class="block">
+  <div class="list">
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="detail">
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  </div>
+</div>  
